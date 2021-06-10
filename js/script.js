@@ -28,9 +28,6 @@ console.log(arrayFinale);
 
 
 
-
-
-
 //  2.      Dare la possibilità di inserire due parole. 
 //          Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.   
 //          Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
@@ -60,7 +57,6 @@ function comparazione(x, y) {
 
 
 
-
 //  3.      Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli 
 //          elementi da uno e dall’altroes. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
@@ -77,11 +73,14 @@ arrayFinale = unioneArray(array1, array2, arrayFinale);
 
 function unioneArray(x, y, a) {
     for(i = 0; i < x.length & i < y.length; i++) {
-        a.push(x[i] + y[i]);
+        a.push(x[i], y[i]);
     }
     return a; 
 }
 console.log(arrayFinale);
+
+
+
 
 
 
